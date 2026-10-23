@@ -26,13 +26,13 @@
       // OAuth grants/tokens issued to Claude. Created via:
       //   wrangler kv namespace create RENPHO_OAUTH_KV   (titled separately from google-health-mcp's OAUTH_KV)
       "binding": "OAUTH_KV",
-      "id": "8bf3bb21a8ed4cfc935bde77616e4e11"
+      "id": "b8cc5520f4d5499480c88f62e71fa8a6"
     },
     {
       // Renpho session tokens + measurement pages (all AES-GCM sealed). Created via:
       //   wrangler kv namespace create RENPHO_CACHE
       "binding": "RENPHO_CACHE",
-      "id": "7e9a793b2eee4402bf11fd774292387d"
+      "id": "48646c7af8b244058ec5b00b826b071a"
     }
   ],
   "vars": {
@@ -40,7 +40,7 @@
     "PUBLIC_URL": "https://renpho-health-mcp.a1dancole.workers.dev",
     // IANA timezone used to resolve "today"/"last 30 days" and to stamp each
     // measurement with a local date/time.
-    "TIME_ZONE": "Europe/London",
+    "TIME_ZONE": "America/DetroitQ",
     // Optional: comma-separated Renpho account emails allowed to connect.
     // Leave empty to allow any Renpho account to connect to this deployment.
     "ALLOWED_EMAILS": ""
